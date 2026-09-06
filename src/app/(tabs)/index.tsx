@@ -7,7 +7,6 @@ export default function Index() {
       <Text style={styles.content}>
         Edit src/app/index.tsx to edit this screen
       </Text>
-      <Link href="/about">Visit about screen</Link>
     </View>
   )
 }
