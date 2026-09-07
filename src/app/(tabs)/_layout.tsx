@@ -3,13 +3,35 @@ import { Tabs } from "expo-router"
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{}}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: "red",
+        tabBarInactiveTintColor: "green",
+        tabBarStyle: {
+          backgroundColor: "blue",
+          borderTopWidth: 1,
+          borderTopColor: "yellow",
+          height: 90,
+          paddingBottom: 30,
+          paddingTop: 10,
+        },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
           title: "Todos",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="list" size={size} color={color} />
+            <Ionicons name="flash-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Settings",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size} color={color} />
           ),
         }}
       />
