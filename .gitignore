@@ -43,4 +43,4 @@ example
 /android
 
 # Convex generated code (run `npx convex dev` to regenerate)
-convex/_generated/
+src/convex/_generated/
