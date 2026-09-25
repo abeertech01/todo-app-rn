@@ -1,4 +1,5 @@
 import Header from "@/components/Header"
+import TodoInput from "@/components/TodoInput"
 import useTheme from "@/hooks/useTheme"
 import { createHomeStyles } from "@/styles/home.styles"
 import { LinearGradient } from "expo-linear-gradient"
@@ -17,6 +18,8 @@ export default function Index() {
     >
       <SafeAreaView style={homeStyles.safeArea}>
         <Header />
+
+        <TodoInput />
         <TouchableOpacity onPress={toggleDarkMode}>
           <Text>toggle the mode</Text>
         </TouchableOpacity>
