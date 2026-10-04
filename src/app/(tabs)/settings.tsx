@@ -1,3 +1,4 @@
+import DangerZone from "@/components/DangerZone"
 import Preferences from "@/components/Preferences"
 import ProgressStats from "@/components/ProgressStats"
 import useTheme from "@/hooks/useTheme"
@@ -40,6 +41,8 @@ const SettingsScreen = () => {
 
           {/* PREFERENCES */}
           <Preferences />
+
+          <DangerZone />
         </ScrollView>
       </SafeAreaView>
     </LinearGradient>
